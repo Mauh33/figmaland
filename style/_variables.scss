@@ -1,20 +1,23 @@
-$background-color: #0b1d26;
-$ft-color: #ffffff;
-$accent: #fbd784;
-$linear-start: rgba(11, 29, 38, 0);
-$linear-end: rgba(11, 29, 38, 1);
-$font-transparent: #ffffff2e;
+$primary: 2091F9;
+$secondary: 2DC071;
+$tertiary: F15B07;
+$text: 252B42;
+$second-text: 374754;
+$white: #ffffff;
+$dark-bg: 252B42;
+$gradient-bg: 222B32;
 
-$fontFamily-primary: "Gilroy", sans-serif;
-$fontFamily-secondary: "Chronicle Display", sans-serif;
+$fontFamily-primary: "";
+$fontFamily-secondary: "Roboto", sans-serif;
 
-$ft-xs: 1.7rem;
+$ft-xxs: 1.5rem;
+$ft-xs: 1.6rem;
 $ft-sm: 1.8rem;
-$ft-md: 2.4rem;
-$ft-lg: 3.2rem;
-$ft-xl: 6.4rem;
-$ft-xxl: 8.8rem;
-$ft-xxxl: 10rem;
+$ft-md: 2rem;
+$ft-lg: 2.8rem;
+$ft-xl: 3rem;
+$ft-xxl: 4.8rem;
+$ft-xxxl: 7.4rem;
 
 $ft-w-sm: 300;
 $ft-w-medium: 500;
@@ -37,3 +40,65 @@ $breakpoints: (
   lg: $min-lg,
   xl: $min-xl,
 );
+
+@font-face {
+  font-family: "font-default";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: $ft-sm;
+}
+
+@font-face {
+  font-family: "link";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: $ft-xxs;
+  line-height: 2.8rem;
+}
+
+@font-face {
+  font-family: "paragraphe";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: $ft-sm;
+  line-height: 2.5rem;
+}
+
+@font-face {
+  font-family: "button-text";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: $ft-md;
+  line-height: 2rem;
+}
+
+@font-face {
+  font-family: "h1";
+  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  font-size: $ft-xxxl;
+  line-height: 8.4rem;
+}
+
+@font-face {
+  font-family: "h2";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: $ft-xxl;
+  line-height: 5.5rem;
+}
+
+@font-face {
+  font-family: "h3";
+  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  font-size: $ft-md;
+  line-height: 2.8rem;
+}
+
+@font-face {
+  font-family: "h4";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: $ft-lg;
+  line-height: 2.8rem;
+}
+
+@font-face {
+  font-family: "h5";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: $ft-xs;
+  line-height: 2.3rem;
+}

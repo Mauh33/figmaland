@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "font-default";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.8rem;
+}
+@font-face {
+  font-family: "link";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+@font-face {
+  font-family: "paragraphe";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+@font-face {
+  font-family: "button-text";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 2rem;
+  line-height: 2rem;
+}
+@font-face {
+  font-family: "h1";
+  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  font-size: 7.4rem;
+  line-height: 8.4rem;
+}
+@font-face {
+  font-family: "h2";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 4.8rem;
+  line-height: 5.5rem;
+}
+@font-face {
+  font-family: "h3";
+  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+@font-face {
+  font-family: "h4";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+}
+@font-face {
+  font-family: "h5";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+@font-face {
+  font-family: "font-default";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.8rem;
+}
+@font-face {
+  font-family: "link";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+@font-face {
+  font-family: "paragraphe";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+@font-face {
+  font-family: "button-text";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 2rem;
+  line-height: 2rem;
+}
+@font-face {
+  font-family: "h1";
+  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  font-size: 7.4rem;
+  line-height: 8.4rem;
+}
+@font-face {
+  font-family: "h2";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 4.8rem;
+  line-height: 5.5rem;
+}
+@font-face {
+  font-family: "h3";
+  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+@font-face {
+  font-family: "h4";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+}
+@font-face {
+  font-family: "h5";
+  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+::-moz-selection {
+  color: black;
+  background: white;
+}
+::-moz-selection,
+::selection {
+  color: black;
+  background: white;
+}
+
+*:focus {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  line-height: 1.15;
+  font-family: "font-default";
+}/*# sourceMappingURL=index.css.map */
