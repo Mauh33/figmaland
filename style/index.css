@@ -122,4 +122,8 @@ html {
   font-size: 62.5%;
   line-height: 1.15;
   font-family: "font-default";
+}
+
+.nav-bloc {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

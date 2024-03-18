@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/index.css" />
     <title>Figmaland</title>
   </head>
   <body>
@@ -32,21 +32,70 @@
         <ul class="social-media-bloc">
           <li class="media-li">
             <a href="">
-              <img src="" alt="" />
+              <img src="./public/img/twitter.svg" alt="twitter logo" />
             </a>
           </li>
           <li class="media-li">
             <a href="">
-              <img src="" alt="" />
+              <img src="./public/img/facebook.svg" alt="facebook logo" />
             </a>
           </li>
           <li class="media-li">
             <a href="">
-              <img src="" alt="" />
+              <img src="./public/img/linkedin.svg" alt="linkedin logo" />
             </a>
           </li>
         </ul>
       </nav>
+
+      <nav class="nav-bloc-mobile">
+        <div class="menu-burger-bloc">
+          <input type="checkbox" id="menuToggle" class="menuToggleCheckbox" />
+          <label for="menuToggle" class="menuToggleLabel">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <link-bloc>
+          <ul class="nav-ul">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Product</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </link-bloc>
+        <img src="" alt="" />
+        <ul class="social-media-bloc">
+          <li class="media-li">
+            <a href="">
+              <img src="./public/img/twitter.svg" alt="twitter logo" />
+            </a>
+          </li>
+          <li class="media-li">
+            <a href="">
+              <img src="./public/img/facebook.svg" alt="facebook logo" />
+            </a>
+          </li>
+          <li class="media-li">
+            <a href="">
+              <img src="./public/img/linkedin.svg" alt="linkedin logo" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
       <header>
         <h1>The best products start with Figma</h1>
         <p class="quote">
@@ -64,6 +113,10 @@
           </p>
           <ul class="feature-ul">
             <li class="description-feature-li">
+              <img
+                src="./public/img/feature-img-1.jpg"
+                alt="représentation d'un cercle et d'un rectangle bleu"
+              />
               <p class="feature-arg">OpenType features Variable fonts</p>
               <p>
                 Slate helps you see how many more days you need to work to reach
@@ -71,6 +124,10 @@
               </p>
             </li>
             <li class="description-feature-li">
+              <img
+                src="./public/img/feature-img-2.png"
+                alt="représensation d'un crayon et de son tracé "
+              />
               <p class="feature-arg">Design with real data</p>
               <p>
                 Slate helps you see how many more days you need to work to reach
@@ -78,6 +135,10 @@
               </p>
             </li>
             <li class="description-feature-li">
+              <img
+                src="./public/img/feature-img-3.png"
+                alt="représensation d'un pinceau"
+              />
               <p class="feature-arg">Fastest way to take action</p>
               <p>
                 Slate helps you see how many more days you need to work to reach
@@ -100,19 +161,29 @@
             </p>
             <button class="btn-cta">Try For Free</button>
           </div>
-          <img src="" alt="" />
+          <img
+            src="./public/img/laptop-open.jpg"
+            alt="ordinateur portable ouvert"
+          />
         </section>
         <section class="newsletter">
-          <img src="" alt="" />
+          <img
+            src="./public/img/newsletter-img.png"
+            alt="Dessin d'une enveloppe géante ouverte contenant des notes "
+          />
           <div class="newsletter-text-bloc">
             <p>At your fingertips</p>
             <h2>Lightning fast prototyping</h2>
             <form action="post">
               <label for="email">
-                Subscribe to our Newsletter
-                <br />
-                Available exclusively on Figmaland <input
-                type="email"name="email" id="email" placeholder="Your email />
+                Subscribe to our Newsletter Available exclusively on Figmaland
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your
+                email"
+                />
               </label>
               <button class="btn-cta" type="submit">Submit</button>
             </form>
@@ -124,31 +195,61 @@
             freelancers
           </p>
           <div class="partner-bloc">
-            <img src="" alt="" class="partners-img" /><img
-              src=""
-              alt=""
+            <img
+              src="./public/img/logos_google.jpg"
+              alt="logo de google"
               class="partners-img"
             />
-            <img src="" alt="" class="partners-img" />
-            <img src="" alt="" class="partners-img" />
-            <img src="" alt="" class="partners-img" />
-            <img src="" alt="" class="partners-img" /><img
-              src=""
-              alt=""
+            <img
+              src="./public/img/amazon.png"
+              alt="logo d'amazon"
               class="partners-img"
-            /><img src="" alt="" class="partners-img" />
+            />
+            <img
+              src="./public/img/microsoft.png"
+              alt="logo de microsoft"
+              class="partners-img"
+            />
+            <img
+              src="./public/img/uber.png"
+              alt="logo d'uber"
+              class="partners-img"
+            />
+            <img
+              src="./public/img/dropbox.png"
+              alt="logo de dropbox"
+              class="partners-img"
+            />
+            <img
+              src="./public/img/logos_google.jpg"
+              alt="logo de google"
+              class="partners-img"
+            />
+            <img
+              src="./public/img/uber.png"
+              alt="logo d'uber"
+              class="partners-img"
+            />
+            <img
+              src="./public/img/amazon.png"
+              alt="logo d'amazon"
+              class="partners-img"
+            />
           </div>
           <button class="btn-cta">Try for Free</button>
         </section>
         <section>
           <h2>Testimonials</h2>
-          <img src="" alt="" />
+          <img src="./public/img/logos_ibm.png" alt="logo d'IBM" />
           <p class="quote">
             Most calendars are designed for teams. Slate is designed for
             freelancers
           </p>
           <div class="ui-designer-model">
-            <img src="" alt="" />
+            <img
+              src="./public/img/ui-designer.png"
+              alt="avatar d'ui-designer"
+            />
             <p>Organize across Ui designer</p>
           </div>
           <button class="btn-cta">More Testimonials</button>
@@ -222,11 +323,20 @@
           </form>
           <div class="contact-elements-bloc">
             <address>
+              <img
+                src="./public/img/map-ping.png"
+                alt="ping de localisation géographique"
+              />
               <a href=""
                 >6386 Spring St undefined Anchorage, Georgia 12473 United
                 States</a
               >
+              <img
+                src="./public/img/phone-android.png"
+                alt="téléphone portable"
+              />
               <a href="tel:+(843) 555-0130">(843) 555-0130</a>
+              <img src="./public/img/enveloppe.png" alt="enveloppe" />
               <a href="mailto:willie.jennings@example.com"
                 >willie.jennings@example.com</a
               >
@@ -243,17 +353,17 @@
             <ul class="social-media-bloc">
               <li class="media-li">
                 <a href="">
-                  <img src="" alt="" />
+                  <img src="./public/img/twitter.svg" alt="twitter logo" />
                 </a>
               </li>
               <li class="media-li">
                 <a href="">
-                  <img src="" alt="" />
+                  <img src="./public/img/facebook.svg" alt="facebook logo" />
                 </a>
               </li>
               <li class="media-li">
                 <a href="">
-                  <img src="" alt="" />
+                  <img src="./public/img/linkedin.svg" alt="linkedin logo" />
                 </a>
               </li>
             </ul>
@@ -293,25 +403,28 @@
         </div>
         <div class="footer-contact-bloc">
           <address>
-            <img src="" alt="" />
+            <img
+              src="./public/img/map-ping-white.png"
+              alt="ping de localisation géographique"
+            />
             <a href=""> 7480 Mockingbird Hill undefined </a>
-            <img src="" alt="" />
+            <img src="./public/img/phone-android-white.png" alt="" />
             <a href="tel:+(843) 555-0130">(843) 555-0130</a>
           </address>
           <ul class="social-media-bloc">
             <li class="media-li">
               <a href="">
-                <img src="" alt="" />
+                <img src="./public/img/twitter.svg" alt="twitter logo" />
               </a>
             </li>
             <li class="media-li">
               <a href="">
-                <img src="" alt="" />
+                <img src="./public/img/facebook.svg" alt="facebook logo" />
               </a>
             </li>
             <li class="media-li">
               <a href="">
-                <img src="" alt="" />
+                <img src="./public/img/linkedin.svg" alt="linkedin logo" />
               </a>
             </li>
           </ul>
