@@ -34,22 +34,16 @@
   line-height: 5.5rem;
 }
 @font-face {
-  font-family: "h3";
+  font-family: "feature-arg";
   src: url("../public/fonts/GraphikBold.otf") format("opentype");
   font-size: 2rem;
   line-height: 2.8rem;
 }
 @font-face {
-  font-family: "h4";
+  font-family: "quote";
   src: url("../public/fonts/GraphikRegular.otf") format("opentype");
   font-size: 2.8rem;
   line-height: 2.8rem;
-}
-@font-face {
-  font-family: "h5";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
-  font-size: 1.6rem;
-  line-height: 2.3rem;
 }
 @font-face {
   font-family: "font-default";
@@ -87,22 +81,16 @@
   line-height: 5.5rem;
 }
 @font-face {
-  font-family: "h3";
+  font-family: "feature-arg";
   src: url("../public/fonts/GraphikBold.otf") format("opentype");
   font-size: 2rem;
   line-height: 2.8rem;
 }
 @font-face {
-  font-family: "h4";
+  font-family: "quote";
   src: url("../public/fonts/GraphikRegular.otf") format("opentype");
   font-size: 2.8rem;
   line-height: 2.8rem;
-}
-@font-face {
-  font-family: "h5";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
-  font-size: 1.6rem;
-  line-height: 2.3rem;
 }
 ::-moz-selection {
   color: black;
