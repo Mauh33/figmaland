@@ -1,17 +1,17 @@
 @font-face {
   font-family: "font-default";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: 1.8rem;
 }
 @font-face {
   font-family: "link";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: 1.5rem;
   line-height: 2.8rem;
 }
 @font-face {
   font-family: "paragraphe";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
@@ -47,18 +47,18 @@
 }
 @font-face {
   font-family: "font-default";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: 1.8rem;
 }
 @font-face {
   font-family: "link";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: 1.5rem;
   line-height: 2.8rem;
 }
 @font-face {
   font-family: "paragraphe";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
@@ -112,12 +112,6 @@
   box-sizing: border-box;
 }
 
-body,
-body > * {
-  margin: 0 auto;
-  padding: 0;
-}
-
 html {
   height: 100%;
   font-size: 62.5%;
@@ -126,15 +120,17 @@ html {
 }
 
 body {
-  background-image: url("../public/img/background-cover-figmaland-mobile.png");
+  background-image: url("/img/background-cover-mobile.png");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
   width: 100vw;
+  margin: 0;
 }
 
 body > * {
-  max-width: 100vw;
-  margin: auto;
+  max-width: 90vw;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .btn-burger {
@@ -149,6 +145,10 @@ body > * {
   max-height: 239px;
 }
 
+iframe {
+  display: none;
+}
+
 .arranging-argument img {
   width: auto;
   max-width: 37.2rem;
@@ -159,11 +159,4 @@ body > * {
   width: auto;
   max-width: 371px;
   height: auto;
-}
-
-@media only screen and (min-width: 577px) {
-  body {
-    background-image: url("../public/img/background-cover-figmaland-desktop.png");
-    background-size: contain;
-  }
 }/*# sourceMappingURL=index.css.map */

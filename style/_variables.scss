@@ -43,20 +43,20 @@ $breakpoints: (
 
 @font-face {
   font-family: "font-default";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: $ft-sm;
 }
 
 @font-face {
   font-family: "link";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: $ft-xxs;
   line-height: 2.8rem;
 }
 
 @font-face {
   font-family: "paragraphe";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: url("/fonts/GraphikRegular.otf") format("opentype");
   font-size: $ft-sm;
   line-height: 2.5rem;
 }
