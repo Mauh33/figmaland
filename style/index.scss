@@ -18,8 +18,9 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: 0;
+body,
+body > * {
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -30,6 +31,45 @@ html {
   font-family: "font-default";
 }
 
-.nav-bloc {
-  display: none;
+body {
+  background-image: url("../public/img/background-cover-figmaland-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  width: 100vw;
+}
+
+body > * {
+  max-width: 100vw;
+  margin: auto;
+}
+
+.btn-burger {
+  background-color: transparent;
+  border-style: none;
+}
+
+.video-bloc {
+  width: auto;
+  max-width: 385px;
+  height: auto;
+  max-height: 239px;
+}
+
+.arranging-argument img {
+  width: auto;
+  max-width: 37.2rem;
+  height: auto;
+}
+
+.newsletter img {
+  width: auto;
+  max-width: 371px;
+  height: auto;
+}
+
+@include from(sm) {
+  body {
+    background-image: url("../public/img/background-cover-figmaland-desktop.png");
+    background-size: contain;
+  }
 }

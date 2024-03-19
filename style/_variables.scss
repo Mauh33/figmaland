@@ -29,16 +29,16 @@ $title-small-size: 3rem;
 $title-medium-size: 3.5rem;
 $title-big-size: 3.8rem;
 
-$min-sm: 576px;
-$min-md: 992px;
-$min-lg: 1200px;
-$min-xl: false;
+$max-sm: 576px;
+$max-md: 992px;
+$max-lg: 1200px;
+$max-xl: false;
 
 $breakpoints: (
-  sm: $min-sm,
-  md: $min-md,
-  lg: $min-lg,
-  xl: $min-xl,
+  sm: $max-sm,
+  md: $max-md,
+  lg: $max-lg,
+  xl: $max-xl,
 );
 
 @font-face {
