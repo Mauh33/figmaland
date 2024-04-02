@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" as="font" href="./public/fonts/GraphikBold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./public/fonts/GraphikRegular.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/index.css" />
     <title>Figmaland</title>
   </head>
   <body id="Home">
     <nav class="nav-bloc" aria-label="navbar">
-      <img src="/img/logo.png" alt="logo de Figma Land" />
+      <div class="logo-bloc">
+        <img src="/img/logo.png" alt="logo de Figma Land"  />
+      </div>
       <div class="menu-burger-bloc">
         <button class="btn-burger" aria-expanded="true" aria-label="open menu">
           <img src="/img/menu-burger.svg" alt="menu burger">
@@ -54,16 +58,21 @@
     <header>
       <h1>The best products start with Figma</h1>
       <p class="quote">
-        Most calendars are designed for teams. Slate is designed for freelancers
+        Most calendars are designed for teams.
+        <span>
+          Slate is designed for freelancers
+        </span>
       </p>
-      <button class="cta-header" type="button">Try For Free</button>
+      <button class="btn-cta header-btn" type="button">Try For Free</button>
     </header>
     <main>
       <section id="Product" class="features">
         <h2>Features</h2>
         <p class="quote">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams.
+          <span>
+            Slate is designed for freelancers
+          </span>
         </p>
         <dl class="feature-ul">
           <div>
@@ -100,50 +109,59 @@
             </dd>
           </div>
         </dl>
-        <div class="video-bloc">
-          <video src="" width="100%" height="100%">
-            <source media="" />
-          </video>
-        </div>
+          <div class="video-bloc">
+            <iframe id="youtube-video" width="100%" height="100%" src="https://www.youtube.com/embed/Cx2dkpBxst8?autoplay=0&controls=1&mute=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
       </section>
       <section class="arranging-argument">
         <div class="arranging-text-bloc">
           <h2>Fastest way to organize</h2>
           <p class="quote">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers
+            Most calendars are designed for teams.
+            <span>
+              Slate is designed for freelancers
+            </span>
           </p>
-          <button class="btn-cta" type="button">Try For Free</button>
+          <button class="btn-cta arranging-btn" type="button">Try For Free</button>
         </div>
         <img src="/img/laptop-open.jpg" alt="ordinateur portable ouvert" />
       </section>
       <section class="newsletter">
         <img
-          src="/img/newsletter-img.png"
-          alt="Dessin d'une enveloppe géante ouverte contenant des notes "
-        />
-        <div class="newsletter-text-bloc">
+        src="/img/newsletter-img.png"
+        alt="Dessin d'une enveloppe géante ouverte contenant des notes "
+      />
           <p>At your fingertips</p>
-          <h2>Lightning fast prototyping</h2>
-          <form action="post" id="newsletter">
+          <h2>Newsletter</h2>
+          <p class="quote">
+            Most calendars are designed for teams.
+            <span>
+              Slate is designed for freelancers
+            </span>
+          </p>
+          <!-- <h2>Lightning fast prototyping</h2> -->
+          <form action="post" id="newsletter" class="newsletter-form">
             <label for="email">
-              Subscribe to our Newsletter Available exclusively on Figmaland
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Your
-                email"
-              />
+              Subscribe to our Newsletter
             </label>
+            <p> Available exclusively on Figmaland</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your
+              email"
+            />
             <button class="btn-cta" type="submit">Submit</button>
           </form>
-        </div>
       </section>
       <section class="partners">
+        <h2>Partners</h2>
         <p class="quote">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams.
+          <span>
+            Slate is designed for freelancers
+          </span>
         </p>
         <div class="partner-bloc">
           <div class="partner-child">
@@ -197,12 +215,14 @@
         </div>
         <button class="btn-cta" type="button">Try for Free</button>
       </section>
-      <section>
+      <section class="testimonials">
         <h2>Testimonials</h2>
         <img src="/img/logos_ibm.png" alt="logo d'IBM" />
         <p class="quote">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams.
+          <span>
+            Slate is designed for freelancers
+          </span>
         </p>
         <div class="ui-designer-model">
           <img src="/img/ui-designer.png" alt="avatar d'ui-designer" />
@@ -213,8 +233,10 @@
       <section id="pricing" class="pricing">
         <h2>Pricing</h2>
         <p class="quote">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams.
+          <span>
+            Slate is designed for freelancers
+          </span>
         </p>
         <div class="cards-offers-bloc">
           <div class="cards-offers">
@@ -261,8 +283,10 @@
       <section id="Contact" class="contact">
         <h2>Contact us</h2>
         <p class="quote">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
+          Most calendars are designed for teams.
+          <span>
+            Slate is designed for freelancers
+          </span>
         </p>
         <form action="" class="contact-form" id="message-contact" >
           <label for="message">

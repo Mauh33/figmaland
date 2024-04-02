@@ -1,11 +1,13 @@
-$primary: 2091F9;
-$secondary: 2DC071;
-$tertiary: F15B07;
-$text: 252B42;
+$primary: #2091f9;
+$secondary: #2dc071;
+$tertiary: #f15b07;
+$text: #252b42;
 $second-text: 374754;
 $white: #ffffff;
-$dark-bg: 252B42;
-$gradient-bg: 222B32;
+$dark-bg: #252b42;
+$gradient-bg: #222b32;
+$form-primary: #f4f4f4;
+$form-secondary: #e8e8e8;
 
 $fontFamily-primary: "";
 $fontFamily-secondary: "Roboto", sans-serif;
@@ -43,55 +45,70 @@ $breakpoints: (
 
 @font-face {
   font-family: "font-default";
-  src: url("/fonts/GraphikRegular.otf") format("opentype");
-  font-size: $ft-sm;
+  src: local("font-default"),
+    url("../public/fonts/GraphikRegular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "link";
-  src: url("/fonts/GraphikRegular.otf") format("opentype");
+  src: local("link"), url("../public/fonts/GraphikRegular.woff2"),
+    format("woff2");
   font-size: $ft-xxs;
   line-height: 2.8rem;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "paragraphe";
-  src: url("/fonts/GraphikRegular.otf") format("opentype");
+  src: local("paragraphe"), url("../public/fonts/GraphikRegular.woff2"),
+    format("woff2");
   font-size: $ft-sm;
   line-height: 2.5rem;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "button-text";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: local("button-text"), url("../public/fonts/GraphikRegular.woff2"),
+    format("woff2");
   font-size: $ft-md;
   line-height: 2rem;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "h1";
-  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  font-family: "big-size-arg";
+  src: local("big-size-arg"), url("../public/fonts/GraphikBold.woff2"),
+    format("woff2");
   font-size: $ft-xxxl;
   line-height: 8.4rem;
+  font-display: swap;
 }
 
-@font-face {
-  font-family: "h2";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+/* @font-face {
+  font-family: "title";
+  src: local("title"), url("../public/fonts/GraphikRegular.woff2"),
+    format("woff2");
   font-size: $ft-xxl;
   line-height: 5.5rem;
-}
+  font-display: swap;
+} */
 
 @font-face {
   font-family: "feature-arg";
-  src: url("../public/fonts/GraphikBold.otf") format("opentype");
+  src: local("feature-arg"), url("../public/fonts/GraphikBold.woff2"),
+    format("woff2");
   font-size: $ft-md;
   line-height: 2.8rem;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "quote";
-  src: url("../public/fonts/GraphikRegular.otf") format("opentype");
+  src: local("quote"), url("../public/fonts/GraphikRegular.woff2"),
+    format("woff2");
   font-size: $ft-lg;
   line-height: 2.8rem;
+  font-display: swap;
 }
