@@ -159,13 +159,16 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   max-width: 100vw;
-  color: 374754;
+  color: #374754;
 }
 
-body > * {
-  max-width: 90vw;
+body > * section {
   padding: 0;
   margin: 0 auto;
+}
+
+section:not(.pricing) {
+  max-width: 90vw;
 }
 
 .nav-bloc {
@@ -267,6 +270,12 @@ h1,
   width: 23.6rem;
 }
 
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -297,13 +306,17 @@ main section,
 .arranging-text-bloc,
 .feature-ul,
 .feature-ul div,
-.newsletter-form {
+.newsletter-form,
+.cards-offers-bloc,
+.cards-offers,
+.ul-pricing {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 h2 {
+  color: #252b42;
   text-align: center;
   margin-bottom: 2.7rem;
 }
@@ -334,6 +347,7 @@ dd {
   font-weight: 800;
   font-size: 2rem;
   line-height: 2.8rem;
+  color: #252b42;
 }
 
 dd {
@@ -351,8 +365,9 @@ dd {
 }
 
 .arranging-argument {
-  height: 80rem;
+  height: 77rem;
   justify-content: space-evenly;
+  margin-bottom: 12rem;
 }
 
 .arranging-btn {
@@ -360,7 +375,15 @@ dd {
 }
 
 .newsletter {
-  height: 110.4rem;
+  height: 95rem;
+  margin-bottom: 17.4rem;
+}
+
+.newsletter p:nth-of-type(1) {
+  font-size: 2rem;
+  margin-bottom: 3.4rem;
+  font-weight: 700;
+  color: #252b42;
 }
 
 .newsletter .quote span {
@@ -372,7 +395,7 @@ dd {
   max-width: 371px;
   height: auto;
   order: 3;
-  margin-bottom: 5.9rem;
+  margin-bottom: 8.5rem;
 }
 
 .newsletter-form {
@@ -384,12 +407,7 @@ dd {
 .newsletter-form label {
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.newsletter-form p {
-  font-size: 1.8rem;
-  margin-bottom: 3.4rem;
+  margin-bottom: 1.2rem;
 }
 
 .newsletter-form input {
@@ -399,19 +417,222 @@ dd {
   margin-bottom: 1.2rem;
 }
 
+.newsletter-form input::-moz-placeholder {
+  padding-left: 3.5rem;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  color: #18171d;
+}
+
+.newsletter-form input::placeholder {
+  padding-left: 3.5rem;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  color: #18171d;
+}
+
 .newsletter-form input,
 .newsletter-form button {
   width: 90%;
   height: 5.4rem;
 }
 
-.partners,
+.partners {
+  height: 94rem;
+  margin-bottom: 16rem;
+}
+
+.partners .quote {
+  margin-bottom: 9rem;
+}
+
+.partner-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.partner-bloc:nth-child(3) {
+  margin-bottom: 9.8rem;
+}
+
+.partner-bloc .partner-child-desktop-start ~ div {
+  display: none;
+}
+
+.partner-child {
+  width: 273px;
+  height: 146px;
+  border: 1px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5rem auto;
+}
+
+.partner-btn {
+  width: 23.6rem;
+  height: 6rem;
+}
+
 .testimonials {
-  height: 106rem;
+  height: 59.6rem;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.testimonial-bloc {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-bloc > p:first-of-type {
+  width: 28rem;
+  height: 5.1rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.ibm-img {
+  width: 12.6rem;
+  height: 5rem;
+}
+
+.ui-designer-model {
+  display: flex;
+  align-items: center;
+}
+
+.ui-designer-model p {
+  padding: 0.5rem 0 0 1rem;
+  display: block;
+  height: 4.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.ui-designer-model span {
+  margin-top: 0.6rem;
+  display: block;
+  font-size: 1.26rem;
+  font-weight: 400;
+}
+
+.testimonials-btn {
+  width: 27.6rem;
+  height: 6rem;
 }
 
 .pricing {
-  height: 243rem;
+  width: 100%;
+  height: 236rem;
+  justify-content: space-evenly;
+  background-color: #252b42;
+}
+
+.pricing h2,
+.pricing .quote {
+  color: #ffffff;
+}
+
+.pricing h2 {
+  padding-top: 9.7rem;
+  margin: unset;
+}
+
+.pricing .quote {
+  margin: unset;
+  padding-bottom: 6rem;
+}
+
+.cards-offers-bloc {
+  height: 195.7rem;
+  background-color: transparent;
+}
+
+.cards-offers {
+  height: 60.7rem;
+  width: 81vw;
+  max-width: 35rem;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+}
+
+.cards-offers:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.cards-offers-bloc .cards-offers:nth-child(2) {
+  background-color: #2091f9;
+}
+
+.title-card-offer-bloc {
+  text-align: center;
+}
+
+.title-card-offer-bloc p {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  width: 14.4rem;
+}
+
+.price-per-month-bloc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 14px);
+  grid-column-gap: 7px;
+}
+
+.price-number {
+  color: #252b42;
+  font-weight: 700;
+  display: block;
+}
+
+.price-per-month-bloc > p:first-child {
+  font-size: 7.4rem;
+}
+
+.price-per-month-bloc > p:nth-child(2) {
+  font-size: 2rem;
+  flex-basis: content;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.price-per-month {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.ul-pricing {
+  height: 24rem;
+  width: 25rem;
+  justify-content: space-around;
+}
+
+.ul-pricing li {
+  font-size: 1.5rem;
+}
+
+.pricing-btn {
+  width: 25.5rem;
+  height: 5.6rem;
+  border: none;
+  font-size: 2rem;
+}
+
+.btn-cta-white {
+  background-color: #ffffff;
+  color: #2091f9;
+  border-radius: 3.5rem;
 }
 
 .contact {
