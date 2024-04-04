@@ -105,10 +105,12 @@ input::placeholder {
   flex-wrap: wrap;
   align-items: center;
   height: 11.2rem;
+  width: 90vw;
+  margin: auto;
 }
 
 .logo-bloc {
-  flex-basis: 89%;
+  flex-basis: 88%;
 }
 
 .menu-toggle {
@@ -127,18 +129,25 @@ input::placeholder {
 }
 
 .link-bloc {
-  width: 10rem;
+  width: 100vw;
   flex-basis: 100%;
   position: absolute;
   left: 0;
+  top: 100px;
   height: 0;
-  transition: height 0.3s ease;
+  opacity: 0.5;
+  transition: height 0.3s ease-in;
   overflow: hidden;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
 
-.btn-burger:active ~ .link-bloc {
-  height: 5rem;
-  overflow: visible;
+.nav-ul {
+  position: relative;
+  opacity: 0;
+  top: -110px;
+  transition: opacity 0.8s ease-in-out, top 0.4s ease-out;
 }
 
 .btn-burger {
@@ -147,8 +156,19 @@ input::placeholder {
   padding: 0;
 }
 
+.menu-burger-bloc ~ .link-bloc.active {
+  opacity: 1;
+  height: 15rem;
+  overflow: visible;
+}
+
+.menu-burger-bloc ~ .link-bloc.active .nav-ul {
+  top: 28px;
+  opacity: 1;
+}
+
 .link-bloc li {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 nav .social-media-bloc {
@@ -194,6 +214,13 @@ header {
   justify-content: space-between;
   height: 49rem;
   margin-bottom: 37rem;
+  position: relative;
+  top: 0;
+  transition: top 0.4s ease-in-out;
+}
+
+.header.active {
+  top: 15rem;
 }
 
 h1 {
@@ -640,6 +667,8 @@ dd {
   height: auto;
 }
 
+// footer
+
 footer {
   height: 143rem;
   background-color: $dark-bg;
@@ -684,8 +713,3 @@ footer .social-media-bloc {
 .page-link-bloc {
   margin-top: 7.6rem;
 }
-
-/* footer div:first-child {
-  margin-top: 10.7rem;
-}
- */
