@@ -118,8 +118,8 @@
   background: white;
 }
 
-*:focus {
-  outline: none;
+:focus {
+  outline: 2px solid #2091f9;
 }
 
 *,

@@ -8,8 +8,8 @@
   background: white;
 }
 
-*:focus {
-  outline: none;
+:focus {
+  outline: 2px solid $primary;
 }
 
 *,
