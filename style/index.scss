@@ -18,51 +18,674 @@
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: center;
+}
+
+a:visited,
+a {
+  text-decoration: none;
+  color: white;
+}
+
 html {
   height: 100%;
   font-size: 62.5%;
   line-height: 1.15;
-  font-family: "font-default";
 }
 
 body {
+  font-family: "font-default";
   background-image: url("/img/background-cover-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  margin: 0;
+  background-size: 100%;
+  max-width: 100vw;
+  color: $second-text;
 }
 
-body > * {
-  max-width: 90vw;
+body > * section {
   padding: 0;
   margin: 0 auto;
+}
+
+section:not(.pricing) {
+  max-width: 90vw;
+}
+
+.btn-cta {
+  border-radius: 3.5rem;
+  background-color: $primary;
+  color: $white;
+  font-size: $ft-md;
+  border-style: none;
+}
+
+.header-btn,
+.arranging-btn {
+  width: 23.6rem;
+}
+
+h3 {
+  font-size: $ft-md;
+  font-weight: $ft-w-bold;
+  margin-bottom: 0.8rem;
+}
+
+.social-media-bloc li {
+  margin: 2.7rem;
+}
+
+input {
+  border-radius: 3.9rem;
+  border: 2px solid $form-secondary;
+  background-color: $form-primary;
+}
+
+input::placeholder {
+  padding-left: 3.5rem;
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  color: #18171d;
+}
+
+// navbar mobile
+
+.nav-bloc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 11.2rem;
+}
+
+.logo-bloc {
+  flex-basis: 89%;
+}
+
+.menu-toggle {
+  position: absolute;
+  z-index: 10;
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0;
 }
 
 .btn-burger {
   background-color: transparent;
   border-style: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-.video-bloc {
-  width: auto;
-  max-width: 385px;
-  height: auto;
-  max-height: 239px;
+.link-bloc {
+  width: 10rem;
+  flex-basis: 100%;
+  position: absolute;
+  left: 0;
+  height: 0;
+  transition: height 0.3s ease;
+  overflow: hidden;
 }
 
-iframe {
+.btn-burger:active ~ .link-bloc {
+  height: 5rem;
+  overflow: visible;
+}
+
+.btn-burger {
+  background-color: transparent;
+  border-style: none;
+  padding: 0;
+}
+
+.link-bloc li {
+  margin: 1rem 0;
+}
+
+nav .social-media-bloc {
+  position: relative;
+  right: 0;
+}
+
+nav .social-media-bloc li {
   display: none;
 }
 
-.arranging-argument img {
-  width: auto;
-  max-width: 37.2rem;
-  height: auto;
+h1 {
+  color: $white;
+}
+
+h1,
+h2 {
+  font-family: "title", sans-serif;
+  font-weight: 400;
+  font-size: $ft-xxl;
+  line-height: 5.5rem;
+}
+
+.quote {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  width: 27rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+h1,
+.quote {
+  text-align: center;
+}
+
+// header mobile
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 49rem;
+  margin-bottom: 37rem;
+}
+
+h1 {
+  margin: 5rem auto;
+  width: 33rem;
+}
+
+header .quote {
+  color: white;
+}
+
+.quote span {
+  display: none;
+}
+
+.header-btn {
+  height: 5.2rem;
+}
+
+// main mobile
+
+main section,
+.arranging-text-bloc,
+.feature-ul,
+.feature-ul div,
+.newsletter-form,
+.cards-offers-bloc,
+.cards-offers,
+.ul-pricing,
+.contact-form,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: $text;
+  text-align: center;
+  margin-bottom: 2.7rem;
+}
+
+.features {
+  height: 149.6rem;
+  justify-content: flex-start;
+}
+
+.feature-ul {
+  order: 2;
+  height: 92.4rem;
+  width: 25.5rem;
+  justify-content: space-around;
+}
+
+.feature-ul div {
+  height: 25.7rem;
+  justify-content: space-evenly;
+}
+
+.feature-arg,
+dd {
+  text-align: center;
+}
+
+.feature-arg {
+  font-weight: $ft-w-extraBold;
+  font-size: $ft-md;
+  line-height: 2.8rem;
+  color: $text;
+}
+
+dd {
+  font-size: $ft-sm;
+  line-height: 2.5rem;
+}
+
+.video-bloc {
+  order: 1;
+  width: 100%;
+  max-width: 385px;
+  height: 100%;
+  max-height: 239px;
+  margin-bottom: 5rem;
+}
+
+.arranging-argument {
+  height: 77rem;
+  justify-content: space-evenly;
+  margin-bottom: 12rem;
+}
+
+.arranging-btn {
+  height: 6rem;
+}
+
+.newsletter {
+  height: 95rem;
+  margin-bottom: 17.4rem;
+}
+
+.newsletter p:nth-of-type(1) {
+  font-size: $ft-md;
+  margin-bottom: 3.4rem;
+  font-weight: $ft-w-bold;
+  color: $text;
+}
+
+.newsletter .quote span {
+  display: block;
 }
 
 .newsletter img {
   width: auto;
   max-width: 371px;
   height: auto;
+  order: 3;
+  margin-bottom: 8.5rem;
 }
+
+.newsletter-form {
+  order: 4;
+  height: 26.1rem;
+  width: 100%;
+}
+
+.newsletter-form label {
+  font-weight: $ft-w-bold;
+  font-size: $ft-md;
+  margin-bottom: 1.2rem;
+}
+
+.newsletter-form input {
+  margin-bottom: 1.2rem;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+  width: 90%;
+  height: 5.4rem;
+}
+
+.partners {
+  height: 94rem;
+  margin-bottom: 16rem;
+}
+
+.partners .quote {
+  margin-bottom: 9rem;
+}
+
+.partner-bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.partner-bloc:nth-child(3) {
+  margin-bottom: 9.8rem;
+}
+
+.partner-bloc .partner-child-desktop-start ~ div {
+  display: none;
+}
+
+.partner-child {
+  width: 273px;
+  height: 146px;
+  border: 1px solid $rectangle-partners;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5rem auto;
+}
+
+.partner-btn {
+  width: 23.6rem;
+  height: 6rem;
+}
+
+.testimonials {
+  height: 59.6rem;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.testimonial-bloc {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-bloc > p:first-of-type {
+  width: 28rem;
+  height: 5.1rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.35rem;
+  font-weight: $ft-w-bold;
+}
+
+.ibm-img {
+  width: 12.6rem;
+  height: 5rem;
+}
+
+.ui-designer-model {
+  display: flex;
+  align-items: center;
+}
+
+.ui-designer-model p {
+  padding: 0.5rem 0 0 1rem;
+  display: block;
+  height: 4.2rem;
+  font-size: 1rem;
+  font-weight: $ft-w-bold;
+}
+
+.ui-designer-model span {
+  margin-top: 0.6rem;
+  display: block;
+  font-size: 1.26rem;
+  font-weight: 400;
+}
+
+.testimonials-btn {
+  width: 27.6rem;
+  height: 6rem;
+}
+
+.pricing {
+  width: 100%;
+  height: 236rem;
+  justify-content: space-evenly;
+  background-color: $dark-bg;
+  margin-bottom: 10rem;
+}
+
+.pricing h2,
+.pricing .quote {
+  color: $white;
+}
+
+.pricing h2 {
+  padding-top: 9.7rem;
+  margin: unset;
+}
+
+.pricing .quote {
+  margin: unset;
+  padding-bottom: 6rem;
+}
+
+.cards-offers-bloc {
+  height: 195.7rem;
+  background-color: transparent;
+}
+
+.cards-offers {
+  height: 60.7rem;
+  width: 81vw;
+  max-width: 35rem;
+  justify-content: space-evenly;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+}
+
+.cards-offers:nth-child(odd) {
+  background-color: $white;
+}
+
+.cards-offers-bloc .cards-offers:nth-child(2) {
+  background-color: $primary;
+}
+
+.title-card-offer-bloc {
+  text-align: center;
+}
+
+.title-card-offer-bloc p {
+  font-size: $ft-xs;
+  line-height: 2.3rem;
+  width: 14.4rem;
+}
+
+.price-per-month-bloc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 14px);
+  grid-column-gap: 7px;
+}
+
+.price-number {
+  color: $text;
+  font-weight: $ft-w-bold;
+
+  display: block;
+}
+
+.price-per-month-bloc > p:first-child {
+  font-size: $ft-xxxl;
+}
+
+.price-per-month-bloc > p:nth-child(2) {
+  font-size: $ft-md;
+  flex-basis: content;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.price-per-month {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.ul-pricing {
+  height: 24rem;
+  width: 25rem;
+  justify-content: space-around;
+}
+
+.ul-pricing li {
+  font-size: $ft-xxs;
+}
+
+.pricing-btn {
+  width: 25.5rem;
+  height: 5.6rem;
+  border: none;
+  font-size: 2rem;
+}
+
+.btn-cta-white {
+  background-color: $white;
+  color: $primary;
+  border-radius: 3.5rem;
+}
+
+.contact {
+  height: 156.8rem;
+}
+
+.contact a {
+  color: $second-text;
+}
+
+.contact-form {
+  order: 4;
+}
+
+.contact-elements-bloc {
+  display: flex;
+  flex-direction: column-reverse;
+  order: 3;
+  margin-bottom: 5rem;
+}
+
+.contact .social-media-bloc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-elements-bloc address {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 17.2rem;
+}
+
+.contact-address-child {
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+}
+
+.contact-elements-bloc address img {
+  width: 2.6rem;
+  height: 3.2rem;
+  margin-right: 2rem;
+}
+.contact-elements-bloc address a {
+  font-size: $ft-xs;
+  padding-left: 2rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 37.8rem;
+  height: 66.9rem;
+  outline: 1px solid #dddddd;
+  border-radius: 2rem;
+  box-shadow: 0 21px 19px 0 rgba(0, 0, 0, 0.07);
+  justify-content: space-evenly;
+}
+
+.contact-form h3 {
+  margin-top: 2.2rem;
+  margin-bottom: unset;
+}
+
+.contact-form input {
+  height: 5.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 28rem;
+  position: relative;
+  top: -20px;
+}
+
+.contact-form textarea {
+  height: 19.3rem;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  color: #18171d;
+  font-family: $fontFamily-secondary;
+  font-size: $ft-xxs;
+}
+
+.contact-btn {
+  width: 14.5rem;
+  height: 5.6rem;
+  border-radius: 3.5rem;
+  align-self: baseline;
+  margin-left: 5.2rem;
+  margin-bottom: 1.5rem;
+  background-color: $primary;
+  color: $white;
+  border: none;
+  font-size: 2rem;
+}
+
+.contact iframe {
+  display: none;
+}
+
+.arranging-argument img {
+  width: auto;
+  max-width: 372px;
+  height: auto;
+}
+
+footer {
+  height: 143rem;
+  background-color: $dark-bg;
+  justify-content: space-evenly;
+}
+
+footer h4 {
+  font-size: $ft-md;
+  font-weight: $ft-w-bold;
+  color: $white;
+  margin-bottom: 2.5rem;
+}
+
+footer li {
+  margin-bottom: 1.6rem;
+  font-size: $ft-xxs;
+  line-height: 2.8rem;
+}
+
+.footer-contact-bloc address {
+  margin-bottom: 2.6rem;
+}
+
+footer .social-media-bloc {
+  display: flex;
+}
+
+.footer-address-bloc {
+  margin-bottom: 1rem;
+}
+
+.footer-address-bloc a {
+  font-family: "roboto";
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+
+.footer-contact-bloc a:first-child {
+  margin-left: 1rem;
+}
+
+.page-link-bloc {
+  margin-top: 7.6rem;
+}
+
+/* footer div:first-child {
+  margin-top: 10.7rem;
+}
+ */
