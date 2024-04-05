@@ -118,7 +118,7 @@
   background: white;
 }
 
-:focus {
+:focus([aria-expanded="true"]) {
   outline: 2px solid #2091f9;
 }
 
@@ -286,12 +286,12 @@ input::placeholder {
   margin: 1.5rem 0;
 }
 
-nav .social-media-bloc {
+.nav-bloc .social-media-bloc {
   position: relative;
   right: 0;
 }
 
-nav .social-media-bloc li {
+.nav-bloc .social-media-bloc li {
   display: none;
 }
 
@@ -417,6 +417,10 @@ dd {
   margin-bottom: 5rem;
 }
 
+.video-bloc iframe {
+  border-radius: 4.4rem;
+}
+
 .arranging-argument {
   height: 77rem;
   justify-content: space-evenly;
@@ -433,7 +437,7 @@ dd {
 }
 
 .newsletter p:nth-of-type(1) {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 3.4rem;
   font-weight: 700;
   color: #252b42;
@@ -460,6 +464,7 @@ dd {
 .newsletter-form label {
   font-weight: 700;
   font-size: 2rem;
+  color: #252b42;
   margin-bottom: 1.2rem;
 }
 
@@ -469,8 +474,14 @@ dd {
 
 .newsletter-form input,
 .newsletter-form button {
+  max-width: 35.3rem;
   width: 90%;
   height: 5.4rem;
+}
+
+.newsletter-form p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 
 .partners {
@@ -709,13 +720,13 @@ dd {
   margin-bottom: 2rem;
 }
 
-.contact-elements-bloc address img {
+.contact-address-child img {
   width: 2.6rem;
   height: 3.2rem;
   margin-right: 2rem;
 }
 
-.contact-elements-bloc address a {
+.contact-address-child a {
   font-size: 1.6rem;
   padding-left: 2rem;
 }
@@ -821,4 +832,359 @@ footer .social-media-bloc {
 
 .page-link-bloc {
   margin-top: 7.6rem;
+}
+
+@media only screen and (min-width: 993px) {
+  body {
+    background-image: url("../public/img/background-cover-figmaland-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .logo-bloc {
+    flex-basis: 15%;
+  }
+  .menu-burger-bloc {
+    display: none;
+  }
+  .link-bloc {
+    overflow: visible;
+    opacity: 1;
+    width: 40%;
+    height: 100%;
+    flex-basis: 40%;
+    position: unset;
+    align-items: center;
+  }
+  .nav-ul {
+    opacity: 1;
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .nav-ul li {
+    display: inline-block;
+    margin: auto;
+  }
+  .nav-bloc .social-media-bloc {
+    display: flex;
+    position: unset;
+    flex-direction: column;
+    position: relative;
+    top: 53px;
+  }
+  .nav-bloc .social-media-bloc li {
+    display: block;
+    align-self: center;
+    margin: auto 2rem;
+    padding: 1rem 0;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  body {
+    background-size: 100%;
+  }
+  .nav-bloc {
+    max-width: 121rem;
+    height: 15.6rem;
+  }
+  .logo-bloc {
+    order: 2;
+    flex-basis: 26%;
+    max-width: 24.6rem;
+  }
+  .link-bloc {
+    order: 1;
+    max-width: 43.7rem;
+  }
+  .nav-bloc .social-media-bloc {
+    order: 3;
+    flex-direction: row;
+    position: unset;
+  }
+  .nav-ul li {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+  .header {
+    height: 52rem;
+  }
+  h1 {
+    margin: 10rem auto 1.7rem;
+    width: 69.2rem;
+    font-size: 7.4rem;
+    line-height: 8.4rem;
+    font-weight: 700;
+  }
+  .header .quote {
+    width: 78.6rem;
+    height: 10rem;
+    margin-bottom: 8.4rem;
+  }
+  .header span {
+    display: block;
+  }
+  .features {
+    height: 136.1rem;
+  }
+  .features .quote {
+    width: 55.2rem;
+  }
+  .quote span {
+    display: block;
+  }
+  .feature-ul {
+    flex-direction: row;
+    height: 25.7rem;
+    width: 86.9rem;
+    order: 3;
+    margin-bottom: 13.2rem;
+  }
+  .video-bloc {
+    order: 4;
+    margin-bottom: unset;
+    max-width: 117.7rem;
+    max-height: 65.8rem;
+  }
+  .arranging-argument {
+    flex-direction: row;
+    justify-content: center;
+    height: 92.4rem;
+    margin-bottom: unset;
+  }
+  .arranging-text-bloc {
+    width: 53.2rem;
+    height: 35.7rem;
+    align-items: baseline;
+    margin-right: 2.5rem;
+  }
+  .arranging-text-bloc h2 {
+    width: 33.5rem;
+    text-align: justify;
+  }
+  .arranging-text-bloc .quote {
+    width: 53.2rem;
+    text-align: justify;
+  }
+  .arranging-argument img {
+    max-width: 66.1rem;
+    max-height: 38.6rem;
+    margin-left: 2.5rem;
+  }
+  section.newsletter {
+    max-width: 1440px;
+  }
+  .newsletter {
+    height: 72.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    margin-bottom: unset;
+  }
+  .newsletter img {
+    order: unset;
+    max-width: 67.7rem;
+    max-height: 51.4rem;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/7;
+    margin-left: 5rem;
+  }
+  .newsletter .quote {
+    display: none;
+  }
+  .newsletter > p:first-of-type,
+  .newsletter h2,
+  .newsletter-form {
+    grid-column: 4/5;
+  }
+  .newsletter > p:first-of-type {
+    grid-row: 2/3;
+    margin-bottom: unset;
+  }
+  .newsletter h2 {
+    grid-row: 3/4;
+    text-align: justify;
+  }
+  .newsletter-form {
+    order: unset;
+    width: 54rem;
+    grid-row: 4/6;
+    display: block;
+    height: 19.9rem;
+  }
+  .newsletter-form input,
+  .newsletter-form .btn-cta {
+    height: 5.8rem;
+    margin-bottom: unset;
+  }
+  .newsletter-form input {
+    max-width: 27.3rem;
+    margin-right: 1.2rem;
+  }
+  .newsletter-form .btn-cta {
+    max-width: 17.2rem;
+  }
+  .partners {
+    height: 93.2rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .partners .quote {
+    width: 55.2rem;
+  }
+  .partners .quote,
+  .partners .partner-bloc {
+    margin-bottom: 8rem;
+  }
+  .partner-bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 107.5rem;
+    height: 33rem;
+    justify-content: flex-start;
+  }
+  .partner-child {
+    margin: unset;
+    height: 16.3rem;
+    width: auto;
+    padding: 0 3%;
+  }
+  .partner-bloc .partner-child-desktop-start ~ div {
+    display: flex;
+  }
+  .testimonial-bloc {
+    width: 96.7rem;
+    height: 31.5rem;
+  }
+  .ibm-img {
+    width: 14.9rem;
+    height: 6rem;
+  }
+  .testimonial-bloc > p:first-of-type {
+    width: 100%;
+    height: 8rem;
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+  .ui-designer-model {
+    width: 18.6rem;
+    justify-content: space-around;
+  }
+  .ui-designer-model p {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+  .ui-designer-model span {
+    margin-top: unset;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+  }
+  .pricing {
+    height: 115.5rem;
+  }
+  .pricing h2 {
+    padding-top: 6rem;
+  }
+  .pricing .quote {
+    width: 55.2rem;
+    padding-bottom: 5rem;
+  }
+  .cards-offers-bloc {
+    flex-direction: row;
+    height: 69.3rem;
+    width: 110.5rem;
+    margin-bottom: 9rem;
+    justify-content: space-between;
+  }
+  .cards-offers {
+    margin-bottom: unset;
+    width: 33.5rem;
+  }
+  .cards-offers-bloc .cards-offers:nth-child(2) {
+    height: 69.3rem;
+  }
+  .contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 120.6rem;
+    height: auto;
+    justify-content: center;
+  }
+  .contact h2 {
+    flex-basis: 100%;
+  }
+  .contact .quote {
+    width: 55.2rem;
+    flex-basis: 100%;
+  }
+  .contact-form {
+    order: unset;
+    flex-basis: 40%;
+    margin-right: 5rem;
+  }
+  .contact-elements-bloc {
+    order: unset;
+    flex-direction: column;
+    max-width: 72.5rem;
+    max-height: 61.2rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+  }
+  .contact-elements-bloc address {
+    flex-wrap: nowrap;
+    max-width: 72.5rem;
+    max-height: 10.8rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+  .contact-address-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: unset;
+  }
+  .contact iframe {
+    border: 0;
+    display: block;
+    width: 51.6rem;
+    height: 34.3rem;
+    margin-bottom: 5rem;
+  }
+  .contact .social-media-bloc {
+    align-self: baseline;
+  }
+  .contact-form {
+    max-width: 45.3rem;
+  }
+  .contact-form input,
+  .contact-form label,
+  .contact-form textarea {
+    max-width: 35.3rem;
+    width: 100%;
+  }
+  .contact-address-child img {
+    align-self: center;
+    margin-right: unset;
+  }
+  .contact-address-child a {
+    padding-left: unset;
+    text-align: center;
+    margin-top: 5%;
+  }
+  footer {
+    height: 56.7rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .page-link-bloc {
+    margin-top: unset;
+  }
 }/*# sourceMappingURL=index.css.map */
