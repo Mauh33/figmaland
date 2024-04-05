@@ -32,9 +32,9 @@ $title-small-size: 3rem;
 $title-medium-size: 3.5rem;
 $title-big-size: 3.8rem;
 
-$max-sm: 576px;
-$max-md: 992px;
-$max-lg: 1200px;
+$max-sm: 575px;
+$max-md: 991px;
+$max-lg: 1999px;
 $max-xl: false;
 
 $breakpoints: (
@@ -52,64 +52,8 @@ $breakpoints: (
 }
 
 @font-face {
-  font-family: "link";
-  src: local("link"), url("../public/fonts/GraphikRegular.woff2"),
-    format("woff2");
-  font-size: $ft-xxs;
-  line-height: 2.8rem;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "paragraphe";
-  src: local("paragraphe"), url("../public/fonts/GraphikRegular.woff2"),
-    format("woff2");
-  font-size: $ft-sm;
-  line-height: 2.5rem;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "button-text";
-  src: local("button-text"), url("../public/fonts/GraphikRegular.woff2"),
-    format("woff2");
-  font-size: $ft-md;
-  line-height: 2rem;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "big-size-arg";
-  src: local("big-size-arg"), url("../public/fonts/GraphikBold.woff2"),
-    format("woff2");
-  font-size: $ft-xxxl;
-  line-height: 8.4rem;
-  font-display: swap;
-}
-
-/* @font-face {
-  font-family: "title";
-  src: local("title"), url("../public/fonts/GraphikRegular.woff2"),
-    format("woff2");
-  font-size: $ft-xxl;
-  line-height: 5.5rem;
-  font-display: swap;
-} */
-
-@font-face {
-  font-family: "feature-arg";
-  src: local("feature-arg"), url("../public/fonts/GraphikBold.woff2"),
-    format("woff2");
-  font-size: $ft-md;
-  line-height: 2.8rem;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "quote";
-  src: local("quote"), url("../public/fonts/GraphikRegular.woff2"),
-    format("woff2");
-  font-size: $ft-lg;
-  line-height: 2.8rem;
+  font-family: "font-bold";
+  src: local("font-bold"),
+    url("../public/fonts/GraphikBold.woff2") format("woff2");
   font-display: swap;
 }

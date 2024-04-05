@@ -4,108 +4,8 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "link";
-  src: local("link"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 1.5rem;
-  line-height: 2.8rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "paragraphe";
-  src: local("paragraphe"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "button-text";
-  src: local("button-text"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 2rem;
-  line-height: 2rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "big-size-arg";
-  src: local("big-size-arg"), url("../public/fonts/GraphikBold.woff2"), format("woff2");
-  font-size: 7.4rem;
-  line-height: 8.4rem;
-  font-display: swap;
-}
-/* @font-face {
-  font-family: "title";
-  src: local("title"), url("../public/fonts/GraphikRegular.woff2"),
-    format("woff2");
-  font-size: $ft-xxl;
-  line-height: 5.5rem;
-  font-display: swap;
-} */
-@font-face {
-  font-family: "feature-arg";
-  src: local("feature-arg"), url("../public/fonts/GraphikBold.woff2"), format("woff2");
-  font-size: 2rem;
-  line-height: 2.8rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "quote";
-  src: local("quote"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 2.8rem;
-  line-height: 2.8rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "font-default";
-  src: local("font-default"), url("../public/fonts/GraphikRegular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "link";
-  src: local("link"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 1.5rem;
-  line-height: 2.8rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "paragraphe";
-  src: local("paragraphe"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "button-text";
-  src: local("button-text"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 2rem;
-  line-height: 2rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "big-size-arg";
-  src: local("big-size-arg"), url("../public/fonts/GraphikBold.woff2"), format("woff2");
-  font-size: 7.4rem;
-  line-height: 8.4rem;
-  font-display: swap;
-}
-/* @font-face {
-  font-family: "title";
-  src: local("title"), url("../public/fonts/GraphikRegular.woff2"),
-    format("woff2");
-  font-size: $ft-xxl;
-  line-height: 5.5rem;
-  font-display: swap;
-} */
-@font-face {
-  font-family: "feature-arg";
-  src: local("feature-arg"), url("../public/fonts/GraphikBold.woff2"), format("woff2");
-  font-size: 2rem;
-  line-height: 2.8rem;
-  font-display: swap;
-}
-@font-face {
-  font-family: "quote";
-  src: local("quote"), url("../public/fonts/GraphikRegular.woff2"), format("woff2");
-  font-size: 2.8rem;
-  line-height: 2.8rem;
+  font-family: "font-bold";
+  src: local("font-bold"), url("../public/fonts/GraphikBold.woff2") format("woff2");
   font-display: swap;
 }
 ::-moz-selection {
@@ -184,8 +84,13 @@ section:not(.pricing) {
   width: 23.6rem;
 }
 
+.desktop-newsletter-h2 {
+  display: none;
+}
+
 h3 {
   font-size: 2rem;
+  font-family: "font-bold";
   font-weight: 700;
   margin-bottom: 0.8rem;
 }
@@ -402,6 +307,7 @@ dd {
 
 .feature-arg {
   font-weight: 800;
+  font-family: "font-bold";
   font-size: 2rem;
   line-height: 2.8rem;
   color: #252b42;
@@ -443,8 +349,12 @@ dd {
 .newsletter p:nth-of-type(1) {
   font-size: 1.8rem;
   margin-bottom: 3.4rem;
-  font-weight: 700;
   color: #252b42;
+}
+
+.newsletter > p:first-of-type {
+  font-family: "font-bold";
+  font-weight: 700;
 }
 
 .newsletter .quote span {
@@ -466,6 +376,7 @@ dd {
 }
 
 .newsletter-form label {
+  font-family: "font-bold";
   font-weight: 700;
   font-size: 2rem;
   color: #252b42;
@@ -558,6 +469,7 @@ dd {
 .ui-designer-model {
   display: flex;
   align-items: center;
+  width: 20rem;
 }
 
 .ui-designer-model p {
@@ -565,12 +477,14 @@ dd {
   display: block;
   height: 4.2rem;
   font-size: 1rem;
+  font-family: "font-bold";
   font-weight: 700;
 }
 
 .ui-designer-model span {
   margin-top: 0.6rem;
   display: block;
+  font-family: "roboto";
   font-size: 1.26rem;
   font-weight: 400;
 }
@@ -623,6 +537,11 @@ dd {
 
 .cards-offers-bloc .cards-offers:nth-child(2) {
   background-color: #2091f9;
+  color: #ffffff;
+}
+
+.cards-offers-bloc .cards-offers:nth-child(2) .price-number {
+  color: #ffffff;
 }
 
 .title-card-offer-bloc {
@@ -644,6 +563,7 @@ dd {
 
 .price-number {
   color: #252b42;
+  font-family: "font-bold";
   font-weight: 700;
   display: block;
 }
@@ -780,6 +700,8 @@ dd {
   background-color: #2091f9;
   color: #ffffff;
   border: none;
+  font-family: "font-bold";
+  font-weight: 700;
   font-size: 2rem;
 }
 
@@ -801,6 +723,7 @@ footer {
 
 footer h4 {
   font-size: 2rem;
+  font-family: "font-bold";
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 2.5rem;
@@ -838,11 +761,11 @@ footer .social-media-bloc {
   margin-top: 7.6rem;
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 992px) {
   body {
     background-image: url("../public/img/background-cover-figmaland-desktop.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   .logo-bloc {
     flex-basis: 15%;
@@ -893,8 +816,10 @@ footer .social-media-bloc {
     margin-top: unset;
   }
 }
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 2000px) {
   body {
+    background-image: url("../public/img/background-cover-figmaland-desktop.png");
+    background-repeat: no-repeat;
     background-size: 100%;
   }
   .nav-bloc {
@@ -926,6 +851,7 @@ footer .social-media-bloc {
     margin: 10rem auto 1.7rem;
     width: 69.2rem;
     font-size: 7.4rem;
+    font-family: "font-bold";
     line-height: 8.4rem;
     font-weight: 700;
   }
@@ -1017,8 +943,12 @@ footer .social-media-bloc {
     margin-bottom: unset;
   }
   .newsletter h2 {
+    display: none;
+  }
+  .newsletter .desktop-newsletter-h2 {
     grid-row: 3/4;
     text-align: justify;
+    display: block;
   }
   .newsletter-form {
     order: unset;
@@ -1082,7 +1012,6 @@ footer .social-media-bloc {
     line-height: 4rem;
   }
   .ui-designer-model {
-    width: 18.6rem;
     justify-content: space-around;
   }
   .ui-designer-model p {
@@ -1096,6 +1025,7 @@ footer .social-media-bloc {
   }
   .pricing {
     height: 115.5rem;
+    margin-bottom: 20.3rem;
   }
   .pricing h2 {
     padding-top: 6rem;
@@ -1121,9 +1051,10 @@ footer .social-media-bloc {
   .contact {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 120.6rem;
     height: auto;
+    min-height: 120.6rem;
     justify-content: center;
+    margin-bottom: 10.2rem;
   }
   .contact h2 {
     flex-basis: 100%;
@@ -1131,6 +1062,7 @@ footer .social-media-bloc {
   .contact .quote {
     width: 55.2rem;
     flex-basis: 100%;
+    margin-bottom: unset;
   }
   .contact-form {
     order: unset;

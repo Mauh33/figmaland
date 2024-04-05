@@ -5,3 +5,5 @@ document
     document.querySelector(".link-bloc").classList.toggle("active");
     document.querySelector(".header").classList.toggle("active");
   });
+
+const screenSize = window.innerWidth;
