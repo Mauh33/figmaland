@@ -307,6 +307,10 @@ h2 {
   line-height: 5.5rem;
 }
 
+h4 {
+  line-height: 2.8rem;
+}
+
 .quote {
   font-size: 2.8rem;
   line-height: 4rem;
@@ -880,6 +884,14 @@ footer .social-media-bloc {
     margin: auto 2rem;
     padding: 1rem 0;
   }
+  footer {
+    height: 56.7rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .page-link-bloc {
+    margin-top: unset;
+  }
 }
 @media only screen and (min-width: 1201px) {
   body {
@@ -1179,12 +1191,23 @@ footer .social-media-bloc {
     text-align: center;
     margin-top: 5%;
   }
-  footer {
-    height: 56.7rem;
-    flex-direction: row;
-    align-items: center;
+  h4 {
+    text-align: left;
   }
-  .page-link-bloc {
-    margin-top: unset;
+  footer {
+    justify-content: center;
+  }
+  footer .page-link-bloc,
+  footer .references {
+    width: 19rem;
+  }
+  footer li {
+    text-align: left;
+  }
+  .footer-contact-bloc {
+    width: 28.4rem;
+  }
+  .social-media-bloc li {
+    margin: 3rem 2.4rem 0 0;
   }
 }/*# sourceMappingURL=index.css.map */
