@@ -273,6 +273,7 @@ header .quote {
 }
 
 .header-btn {
+  width: 23.6rem;
   height: 5.2rem;
 }
 
@@ -779,7 +780,7 @@ footer .social-media-bloc {
   body {
     background-image: url("../public/img/background-cover-figmaland-desktop.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   .logo-bloc {
