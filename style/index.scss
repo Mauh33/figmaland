@@ -60,7 +60,7 @@ section:not(.pricing) {
   max-width: 90vw;
 }
 
-.btn-cta {
+button {
   border-radius: 3.5rem;
   background-color: $primary;
   color: $white;
@@ -68,7 +68,7 @@ section:not(.pricing) {
   border-style: none;
 }
 
-.header-btn,
+.featur .header-btn,
 .arranging-btn {
   width: 23.6rem;
 }
@@ -94,11 +94,38 @@ input {
   background-color: $form-primary;
 }
 
-input::placeholder {
-  padding-left: 3.5rem;
-  font-family: "Roboto";
-  font-size: 1.4rem;
+input::placeholder,
+textarea::placeholder {
+  font-family: $fontFamily-secondary;
   color: #18171d;
+}
+
+textarea {
+  height: 19.3rem;
+  background-color: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  padding-top: 2.3rem;
+}
+
+textarea:-moz-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea::placeholder {
+  font-size: $ft-xxs;
+  line-height: 1.6rem;
+  font-weight: $ft-w-medium;
+}
+
+.arranging-btn,
+.partner-btn,
+.testimonials-btn {
+  height: 6rem;
+}
+
+.newsletter .quote span,
+.testimonial-bloc span {
+  display: block;
 }
 
 // navbar mobile
@@ -206,6 +233,7 @@ h4 {
   width: 27rem;
   text-align: center;
   margin-bottom: 6rem;
+  color: $quote;
 }
 
 h1,
@@ -325,10 +353,6 @@ dd {
   margin-bottom: 12rem;
 }
 
-.arranging-btn {
-  height: 6rem;
-}
-
 .newsletter {
   height: 95rem;
   margin-bottom: 17.4rem;
@@ -343,10 +367,6 @@ dd {
 .newsletter > p:first-of-type {
   font-family: "font-bold";
   font-weight: $ft-w-bold;
-}
-
-.newsletter .quote span {
-  display: block;
 }
 
 .newsletter img {
@@ -373,6 +393,11 @@ dd {
 
 .newsletter-form input {
   margin-bottom: 1.2rem;
+}
+
+.newsletter input:placeholder-shown {
+  padding-left: 3.9rem;
+  font-size: 1.4rem;
 }
 
 .newsletter-form input,
@@ -417,13 +442,22 @@ dd {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 1.5rem auto;
+}
+
+.partner-child:nth-child(2) img,
+.partner-child:nth-child(8) img {
+  margin-top: 1rem;
+}
+
+.partner-child p {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
 }
 
 .partner-btn {
   width: 23.6rem;
-  height: 6rem;
 }
 
 .testimonials {
@@ -479,7 +513,6 @@ dd {
 
 .testimonials-btn {
   width: 27.6rem;
-  height: 6rem;
 }
 
 .pricing {
@@ -586,11 +619,10 @@ dd {
 .pricing-btn {
   width: 25.5rem;
   height: 5.6rem;
-  border: none;
   font-size: 2rem;
 }
 
-.btn-cta-white {
+.btn-white {
   background-color: $white;
   color: $primary;
   border-radius: 3.5rem;
@@ -613,6 +645,7 @@ dd {
   flex-direction: column-reverse;
   order: 3;
   margin-bottom: 5rem;
+  max-width: 72.5rem;
 }
 
 .contact .social-media-bloc {
@@ -667,14 +700,7 @@ dd {
   width: 28rem;
   position: relative;
   top: -20px;
-}
-
-.contact-form textarea {
-  height: 19.3rem;
-  background-color: #f5f5f5;
-  border: 1px solid #e8e8e8;
-  color: #18171d;
-  font-family: $fontFamily-secondary;
+  padding-left: 2rem;
   font-size: $ft-xxs;
 }
 
@@ -685,11 +711,7 @@ dd {
   align-self: baseline;
   margin-left: 5.2rem;
   margin-bottom: 1.5rem;
-  background-color: $primary;
-  color: $white;
   border: none;
-  font-family: "font-bold";
-  font-weight: $ft-w-bold;
   font-size: 2rem;
 }
 
@@ -825,6 +847,15 @@ footer .social-media-bloc {
     background-size: 100%;
   }
 
+  .quote span {
+    display: block;
+  }
+
+  .header span,
+  .testimonials span {
+    display: inline;
+  }
+
   .nav-bloc {
     max-width: 121rem;
     height: 15.6rem;
@@ -871,20 +902,12 @@ footer .social-media-bloc {
     margin-bottom: 8.4rem;
   }
 
-  .header span {
-    display: block;
-  }
-
   .features {
     height: 136.1rem;
   }
 
   .features .quote {
     width: 55.2rem;
-  }
-
-  .quote span {
-    display: block;
   }
 
   .feature-ul {
@@ -989,7 +1012,7 @@ footer .social-media-bloc {
   }
 
   .newsletter-form input,
-  .newsletter-form .btn-cta {
+  .newsletter-form button {
     height: 5.8rem;
     margin-bottom: unset;
   }
@@ -999,7 +1022,7 @@ footer .social-media-bloc {
     margin-right: 1.2rem;
   }
 
-  .newsletter-form .btn-cta {
+  .newsletter-form button {
     max-width: 17.2rem;
   }
 
@@ -1044,14 +1067,21 @@ footer .social-media-bloc {
     height: 31.5rem;
   }
 
+  .testimonial-bloc span {
+    display: inline;
+    font-family: "font-default";
+  }
+
   .ibm-img {
     width: 14.9rem;
     height: 6rem;
   }
 
   .testimonial-bloc > p:first-of-type {
+    max-width: 96.7rem;
     width: 100%;
     height: 8rem;
+    font-family: "font-default";
     font-size: 2.8rem;
     line-height: 4rem;
   }
@@ -1106,7 +1136,6 @@ footer .social-media-bloc {
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
-    min-height: 120.6rem;
     justify-content: center;
     margin-bottom: 10.2rem;
   }
@@ -1118,7 +1147,6 @@ footer .social-media-bloc {
   .contact .quote {
     width: 55.2rem;
     flex-basis: 100%;
-    margin-bottom: unset;
   }
 
   .contact-form {
