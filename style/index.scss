@@ -194,17 +194,19 @@ textarea::placeholder {
 
 .menu-burger-bloc ~ .link-bloc.active {
   opacity: 1;
-  height: 15rem;
+  height: 19rem;
   overflow: visible;
 }
 
 .menu-burger-bloc ~ .link-bloc.active .nav-ul {
-  top: 28px;
+  top: 10px;
   opacity: 1;
+  height: 100%;
 }
 
 .link-bloc li {
   margin: 1.5rem 0;
+  font-size: $ft-xxs;
 }
 
 .nav-bloc .social-media-bloc {
@@ -790,7 +792,7 @@ footer .social-media-bloc {
 
 @include from(md) {
   body {
-    background-image: url("../public/img/background-cover-figmaland-desktop.png");
+    background-image: url("/img/background-cover-figmaland-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -822,11 +824,6 @@ footer .social-media-bloc {
     width: 100%;
   }
 
-  .nav-ul li {
-    display: inline-block;
-    margin: auto;
-  }
-
   .nav-bloc .social-media-bloc {
     display: flex;
     position: unset;
@@ -855,7 +852,7 @@ footer .social-media-bloc {
 
 @include from(lg) {
   body {
-    background-image: url("../public/img/background-cover-figmaland-desktop.png");
+    background-image: url("/img/background-cover-figmaland-desktop.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -892,8 +889,10 @@ footer .social-media-bloc {
   }
 
   .nav-ul li {
-    font-size: $ft-xxs;
+    font-size: $ft-sm;
     line-height: 2.8rem;
+    display: inline-block;
+    margin: auto;
   }
 
   .header {

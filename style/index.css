@@ -1,11 +1,11 @@
 @font-face {
   font-family: "font-default";
-  src: local("font-default"), url("../public/fonts/GraphikRegular.woff2") format("woff2");
+  src: local("font-default"), url("/fonts/GraphikRegular.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "font-bold";
-  src: local("font-bold"), url("../public/fonts/GraphikBold.woff2") format("woff2");
+  src: local("font-bold"), url("/fonts/GraphikBold.woff2") format("woff2");
   font-display: swap;
 }
 ::-moz-selection {
@@ -214,17 +214,19 @@ textarea::placeholder {
 
 .menu-burger-bloc ~ .link-bloc.active {
   opacity: 1;
-  height: 15rem;
+  height: 19rem;
   overflow: visible;
 }
 
 .menu-burger-bloc ~ .link-bloc.active .nav-ul {
-  top: 28px;
+  top: 10px;
   opacity: 1;
+  height: 100%;
 }
 
 .link-bloc li {
   margin: 1.5rem 0;
+  font-size: 1.5rem;
 }
 
 .nav-bloc .social-media-bloc {
@@ -807,7 +809,7 @@ footer .social-media-bloc {
 
 @media only screen and (min-width: 992px) {
   body {
-    background-image: url("../public/img/background-cover-figmaland-desktop.png");
+    background-image: url("/img/background-cover-figmaland-desktop.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -834,10 +836,6 @@ footer .social-media-bloc {
     justify-content: space-around;
     width: 100%;
   }
-  .nav-ul li {
-    display: inline-block;
-    margin: auto;
-  }
   .nav-bloc .social-media-bloc {
     display: flex;
     position: unset;
@@ -862,7 +860,7 @@ footer .social-media-bloc {
 }
 @media only screen and (min-width: 1200px) {
   body {
-    background-image: url("../public/img/background-cover-figmaland-desktop.png");
+    background-image: url("/img/background-cover-figmaland-desktop.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -892,8 +890,10 @@ footer .social-media-bloc {
     position: unset;
   }
   .nav-ul li {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 2.8rem;
+    display: inline-block;
+    margin: auto;
   }
   .header {
     height: 52rem;
